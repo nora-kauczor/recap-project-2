@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script scr="/index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -22,16 +23,16 @@
               In the Kingdom Heart series who provides the english voice for
               Master Eraqus?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button class="card__button-answer" type="button" data-js="card__button-answer">
               Show answer
             </button>
-            <p class="card__answer">Mark Hamill</p>
+            <p class="card__answer" data-js="card__answer">Mark Hamill</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#kingdomheart</li>
               <li class="card__tag-list-item">#mastereraqus</li>
               <li class="card__tag-list-item">#english voices</li>
             </ul>
-            <div class="card__button-bookmark">
+            <div class="card__button-bookmark" data-js="card__button-bookmark">
               <button class="bookmark" aria-label="bookmark" type="button">
                 <svg
                   class="bookmark__icon"
@@ -118,7 +119,7 @@
         </li>
       </ul>
     </main>
-
+<!-- NAVIGATION -->
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__list-item navigation__list-item--active">
@@ -139,6 +140,7 @@
             </svg>
           </a>
         </li>
+        <!-- go to bookmarks -->
         <li class="navigation__list-item">
           <a
             class="navigation__link"
@@ -156,7 +158,12 @@
               />
             </svg>
           </a>
+          <!-- got to form -->
         </li>
+        <li class="navigation__list-item"> 
+          <a class="navigation__link" href="/form.html" aria-label="click here to create your own quiz questions"></a>
+          </li>
+        <!-- go to profile -->
         <li class="navigation__list-item">
           <a
             class="navigation__link"

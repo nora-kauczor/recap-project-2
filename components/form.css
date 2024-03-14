@@ -1,0 +1,9 @@
+#new-cards {position: relative; display: flex; flex-direction: column; justify-content: space-evenly;}
+
+#new-cards_question, #new-cards_answer {position: absolute;};
+
+
+#new-cards_question {}
+
+
+#new-cards_answer{}

@@ -33,17 +33,11 @@
   display: block;
 }
 
-/* Class to hide question */
-.hidden {display: none;}
-
 .card__button-bookmark {
   position: absolute;
   right: 1rem;
   top: -1.5rem;
 }
-
-/* class to change the bookmark's color */
-.card__button-bookmark_black {background-color: black;}
 
 .card__tag-list {
   display: flex;

@@ -1,13 +1,37 @@
-/* #new-cards {
-    /* position: relative; */
-    /* display: flex;
-    flex-direction: column; 
-    justify-content: space-evenly;} */
+.main-forms {
+  background-color: blue;
+  margin-top: 100px;
+}
 
-/* #new-cards_question, #new-cards_answer {position: absolute;};
+.new-cards {
+  background-color: hotpink;
+  /* min-height statt nur height damit responsive */
+  min-height: 73vh;
+  /* divs (in denen eingabefeder und labels genested sind) und button positionieren*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  align-items: center;
+}
 
+/* label und inputfelder innerhalb ihrer divs positionieren */
+.new-cards_question,
+.new-cards_answer,
+.new-cards_tag {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
 
-#new-cards_question {position: absolute; top: 100px;} */ */
+/* inputfelder stylen*/
+.new-cards_answer-field,
+.new-cards_question-field {
+  min-width: 50vw;
+  min-height: 12vh;
+}
 
-
-/* #new-cards_answer{} */
+.new-cards_tag-input {
+  min-width: 50vw;
+}

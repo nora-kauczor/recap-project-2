@@ -15,27 +15,45 @@ Submit button
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script scr="/index.js" defer></script>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz-App</h1>
     </header>
-    <main>
-<form id="new-cards">
-<label for="new-cards_question">Your question:</label>
-<textarea id="new-cards_question" name="new-cards_question"></textarea>
-<label for="new-cards_answer">Your answer:</label>
-<textarea id="new-cards_answer" name="new-cards_answer"></textarea>
-<label for="new-cards_tag">Your question:</label>
-<input type="text" id="new-cards_tag" name="new-cards_tag" /> 
-<button>Submit</button>
-</form>
-   </main>
-<!-- NAVIGATION -->
+    <!-- form -->
+    <main class="main-forms">
+      <form class="new-cards" data-js="new-cards">
+        <!-- question -->
+        <div class="new-cards_question">
+          <label for="new-cards_question"> Your question: </label>
+
+          <textarea
+            class="new-cards_question-field"
+            name="new-cards_question"
+          ></textarea>
+        </div>
+        <!-- answer -->
+        <div class="new-cards_answer">
+          <label for="new-cards_answer">Your answer:</label>
+          <textarea
+            class="new-cards_answer-field"
+            name="new-cards_answer"
+          ></textarea>
+        </div>
+        <!-- tags -->
+        <div class="new-cards_tag">
+          <label for="new-cards_tag">Tags</label>
+          <input type="text" class="new-cards_tag-input" name="new-cards_tag" />
+        </div>
+        <!-- button -->
+        <button class="new-cards_button">Submit</button>
+      </form>
+    </main>
+
     <nav class="navigation">
       <ul class="navigation__list">
-        <li class="navigation__list-item ">
+        <li class="navigation__list-item">
           <a
             class="navigation__link"
             href="/index.html"
@@ -72,11 +90,13 @@ Submit button
           </a>
         </li>
 
-        
-<li class="navigation__list-item navigation__list-item--active"> 
-<a class="navigation__link" href="/form.html" aria-label="click here to create your own quiz questions"></a>
-</li>
-
+        <li class="navigation__list-item navigation__list-item--active">
+          <a
+            class="navigation__link"
+            href="/form.html"
+            aria-label="click here to create your own quiz questions"
+          ></a>
+        </li>
 
         <li class="navigation__list-item">
           <a

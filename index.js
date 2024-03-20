@@ -1,3 +1,5 @@
+import { createNewCard } from "./form.js";
+
 // 1. Toggle functionality
 // Bookmark button
 // The following acceptance criteria should be met for the bookmark button:

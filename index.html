@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./index.js" type="module"></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz-App</h1>
     </header>
     <main>
-      <ul class="card-list">
+      <ul class="card-list" data-js="card-list">
         <!--
                 FIRST CARD
               -->
@@ -23,7 +23,11 @@
               In the Kingdom Heart series who provides the english voice for
               Master Eraqus?
             </h2>
-            <button class="card__button-answer" type="button" data-js="card__button-answer">
+            <button
+              class="card__button-answer"
+              type="button"
+              data-js="card__button-answer"
+            >
               Show answer
             </button>
             <p class="card__answer" data-js="card__answer">Mark Hamill</p>
@@ -33,7 +37,12 @@
               <li class="card__tag-list-item">#english voices</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button" data-js="card__button-bookmark">
+              <button
+                class="bookmark"
+                aria-label="bookmark"
+                type="button"
+                data-js="card__button-bookmark"
+              >
                 <svg
                   class="bookmark__icon"
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +128,7 @@
         </li>
       </ul>
     </main>
-<!-- NAVIGATION -->
+    <!-- NAVIGATION -->
     <nav class="navigation">
       <ul class="navigation__list">
         <li class="navigation__list-item navigation__list-item--active">
@@ -160,9 +169,13 @@
           </a>
           <!-- got to form -->
         </li>
-        <li class="navigation__list-item"> 
-          <a class="navigation__link" href="/form.html" aria-label="click here to create your own quiz questions"></a>
-          </li>
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="/form.html"
+            aria-label="click here to create your own quiz questions"
+          ></a>
+        </li>
         <!-- go to profile -->
         <li class="navigation__list-item">
           <a

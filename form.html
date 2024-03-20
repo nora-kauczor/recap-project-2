@@ -1,7 +1,7 @@
 <!-- Create a new HTML document called form.html
 Add the page to the navigation of your Quiz App
 Within form.html create a form with the following fields
-"Your question" as <textarea /> ????
+"Your question" as <textarea />
 "Your answer" as <textarea />
 "Tag" as <input type="text" />
 Submit button
@@ -15,36 +15,54 @@ Submit button
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <script src="./form.js" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">Quiz-App</h1>
     </header>
     <!-- form -->
-    <main class="main-forms">
+    <main class="main-forms" data-js="main-forms">
       <form class="new-cards" data-js="new-cards">
         <!-- question -->
         <div class="new-cards_question">
           <label for="new-cards_question"> Your question: </label>
-
           <textarea
             class="new-cards_question-field"
             name="new-cards_question"
+            data-js="new-cards_question-field"
+            maxlenght="150"
           ></textarea>
+          <p
+            class="remaining-characters"
+            data-js="remaining-characters_question"
+          >
+            <span>150</span> characters left
+          </p>
         </div>
         <!-- answer -->
         <div class="new-cards_answer">
           <label for="new-cards_answer">Your answer:</label>
           <textarea
             class="new-cards_answer-field"
-            name="new-cards_answer"
-          ></textarea>
+            name="new-cards_answer-field"
+            data-js="new-cards_answer-field"
+            maxlenght="150"
+          >
+          </textarea>
+          <p class="remaining-characters" data-js="remaining-characters_answer">
+            <span>150</span> characters left
+          </p>
         </div>
         <!-- tags -->
         <div class="new-cards_tag">
           <label for="new-cards_tag">Tags</label>
-          <input type="text" class="new-cards_tag-input" name="new-cards_tag" />
+          <input
+            type="text"
+            class="new-cards_tag-input"
+            name="new-cards_tag"
+            data-js="new-cards_tag-input"
+          />
         </div>
         <!-- button -->
         <button class="new-cards_button">Submit</button>

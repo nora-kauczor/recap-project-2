@@ -25,7 +25,8 @@
   margin-top: 20px;
 }
 
-/* inputfelder stylen*/
+/* inputfelder stylen. text areas sollen eigentlich über cols und rows-attribute in html-script gestyled werden. das wäre dann rows="10"
+            cols="40"*/
 .new-cards_answer-field,
 .new-cards_question-field {
   min-width: 50vw;
